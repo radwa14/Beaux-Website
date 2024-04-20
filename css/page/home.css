@@ -1,0 +1,426 @@
+/* section home */
+.home {
+    position: relative;
+  }
+  
+  .carousel-caption {
+    padding: 25px 75px 30px;
+    width: 60%;    
+    color:rgb(51, 51, 51);
+    text-transform: uppercase;
+  }
+  .carousel-caption h2 {
+    font-family: MrDeHaviland-Regular;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 66px;
+    display: block;
+    margin-bottom: 10px;
+  }
+.carousel-caption h3 {
+    font-family:JosefinSans-ExtraLight ;
+    font-size: 36px;
+    line-height: 36px;
+  }
+  
+  .carousel-caption p{
+    font-family:JosefinSans-Medium ;
+    color: rgb(51, 51, 51) ;
+    letter-spacing: 0.6px;
+    font-size: 11px;
+    line-height: 28.8px;
+  }
+  
+  .carousel-item:first-child .carousel-caption {
+    top: 200px;
+    right: 0;
+    left: auto;
+  }
+  
+  .carousel-item:last-child .carousel-caption {
+    top: 200px;
+    right: auto;
+    left: 0;
+  }
+  .caption a{
+    font-family:JosefinSans-Medium ;
+    font-size: 16px;
+    text-transform:capitalize;
+    background: rgb(51, 51, 51);
+    color: #fff;
+    display: inline-block;
+    padding: 10px 10px;
+    line-height: 16px;
+    position: relative; 
+    z-index: 1;    
+    transition: all 0.5s;
+}
+.caption a:hover{
+    color: #000000;
+}
+.layer1::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;    
+    inset: 0;   
+    opacity: 0;
+    z-index: -1;
+    background-color: rgb(255, 175, 155) ;    
+    transition: opacity 0.5s;  
+}
+.layer1:hover::before{
+    opacity: 1;
+} 
+.carousel-control-prev,
+.carousel-control-next {
+  display: grid;
+  place-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  border: none;
+  z-index: 1;
+}
+
+.carousel-control-prev {
+  left: 15px;
+}
+
+.carousel-control-next {
+  right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #fff;
+  background-size: 50%;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  transition: all 0.5s;
+}
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover{
+    background-color: rgb(255, 175, 155);
+}
+.carousel-control-prev-icon:before,
+.carousel-control-next-icon:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel-control-prev-icon:before {
+  border-left: 2px solid #000;
+  border-top: 2px solid #000;
+  width: 6px;
+  height: 6px;
+}
+.carousel-control-next-icon:before {
+  border-right: 2px solid #000;
+  border-bottom: 2px solid #000;
+  width: 6px;
+  height: 6px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  margin-top: -20px;
+}
+.carousel-indicators {
+  bottom: -30px;
+}
+/* section 2 */
+.text{
+    background-color:rgb(254, 235, 231);
+}
+.text .container{
+    width: 57%;
+    margin: auto;
+}
+.text .text-width{
+    padding: 36px 50px;
+}
+.text .content h4{
+    margin: 26.6px 0;
+    font-size: 20px;
+    font-family:JosefinSans-Regular ;
+}
+.text .content p{
+    margin: 16px 0;
+    font-size: 16px;
+    line-height: 28.8px;
+}
+/* section3 */
+/* title */
+.shopping-section{
+    background-color: #fff;
+}
+.section-width{
+    padding: 100px 50px 0px;
+}
+.title{
+    margin-bottom: 80px;
+}
+.title p{
+    font-size: 100px;
+    color: rgb(254, 235, 231);
+    font-family: MrDeHaviland-Regular;
+    text-transform: capitalize;
+    transform: translateY(50%);
+    z-index: -1;
+}
+ .title h2{
+    font-size: 20px;
+    font-family:JosefinSans-Regular ;
+    text-transform: uppercase;
+    position: relative;
+    z-index: 1;
+    margin-top: -12px;
+}
+/* cards */
+.shopping-section .shopping-cards .shopping-border {
+  border: none;
+  padding: 0 20px;
+}
+.shopping-section .shopping-cards .banner .card-img {
+  position: relative;
+  overflow: hidden;
+}
+.shopping-section .shopping-cards .banner .card-img::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  background-color:#ffaf9ba6;
+  transition: all 1s;
+  z-index: 1;
+}
+.shopping-section .shopping-cards .banner:hover .card-img::after {
+  opacity: 1;
+}
+.shopping-section .shopping-cards .text{
+  background-color: transparent;
+  justify-content: center;
+  text-transform: uppercase;
+}
+.shopping-section .shopping-cards .card-content {
+  position: absolute; 
+  transform: translate(25%, 40%); 
+  transition: all 1s;
+  opacity: 0;
+  z-index: 2;  
+  height: 200px;
+  width: 200px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.shopping-section .shopping-cards .banner:hover .card-content {
+  opacity: 1;
+}
+.shopping-section .shopping-cards .text h4{
+  margin: 10px 0;
+  font-size: 20px;
+  line-height: 26px;
+}
+.shopping-section .shopping-cards .text a, .background .content-middle a{
+  color: rgb(51, 51, 51);
+  padding-top:3px ;
+  padding-bottom: 5px;
+  font-size: 13px;
+  border-bottom: 1px solid rgb(51, 51, 51);
+  transition: all 1s;
+  position: relative;
+}
+.shopping-section .shopping-cards .text a:hover, .background .content-middle a:hover{
+  color: rgb(255, 175, 155);
+  border-color: rgb(255, 175, 155);
+  letter-spacing: 3px;
+}
+
+/* section4 */
+.background {
+  background-image: url("https://beaux-theme.myshopify.com/cdn/shop/files/bg-image.jpg?v=1614298416&width=1500");
+  height: 1290px;
+  background-repeat: no-repeat;
+  background-position: right center;
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+}
+.background .content-middle {
+  color: #333;
+  padding: 50px;
+  text-align: center;
+}
+.background .content-middle .full-width {
+  padding: 35px 50px 30px;
+  background-color: #fff;
+  line-height: 32.5px;
+  text-transform: uppercase;
+}
+.background .content-middle h2 {
+  margin-bottom: 12px;
+  font-size: 25px;
+}
+.background .content-middle p {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  line-height: 25px;
+  text-transform: none;
+}
+.background .content-middle a {
+  margin-top: 10px;
+}
+/* section5 */
+.cards .card{
+  border: none;
+  padding:5px 15px 9px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+.cards .card .card-img{
+  position: relative;
+}
+.cards .card .hover {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s;
+  opacity: 0;
+  z-index: 2;   
+  /* width: 385px; */
+}
+.cards .card:hover .hover  {
+  opacity: 1;
+}
+.cards .hover-img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  overflow: hidden;  
+  border-radius: 5px;
+}
+.cards .card:hover .hover-img{
+  opacity: 1;
+}
+.cards .hover-img img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 1s;
+}
+.cards .hover-img:hover img{
+  transform: scale(1.1);
+}
+.cards .hover .icons{
+  position: absolute;
+  opacity: 0;
+  transition: all 0.5s;
+  z-index: 99;
+}
+.cards .card:hover .hover .icons{
+  opacity: 1;
+}
+.cards .card .icons{
+  padding: 15px;
+  margin: 18px 0;
+}
+.cards .hover button{
+  background-color: #fff;
+  padding: 4px 9px;
+  margin: 5px;
+  border: none;  
+  transition: all 1s;
+}
+.cards .hover i{
+  width: 16px;
+  height: 16px;
+  font-size: 14px;
+}
+.cards .hover button:hover{
+  background-color: rgb(254, 235, 231);
+}
+.cards .card-text{
+  padding: 25px 13px;
+}
+.cards .card-text a{
+  color: rgb(51, 51, 51) ;
+  line-height: 20.8px;
+  letter-spacing: 0.6px;
+transition: all 0.5s;
+}
+.cards .card-text a:hover{
+  color: rgb(255, 175, 155);
+}
+.cards .card-text .price{
+  line-height: 32.4px;
+  margin-top: 15px;
+}
+.cards .card-text .price span{
+  letter-spacing: 1px;
+  line-height: 22.4px;
+}
+.cards .card-text .price .span{
+  margin-right: 10px;
+}
+.cards .card-text .price .span2{
+  font-size: 12.8px;
+  color: rgba(68, 68, 68, 0.527);
+  line-height: 17.92px;
+  text-decoration: line-through;
+}
+/* section6 */
+.video .page-width{
+  padding: 0 50px;
+  margin: 0 auto;
+}
+.video .video {
+  position: relative;
+}
+.video video::after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  opacity: 1;
+  background-color: rgba(254, 235, 231, 0.664);
+  z-index: 2;
+}
+.video .video-banner .video-content {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.video .video-banner video{
+  position: relative;
+}
+
+
+
+
+
+
+
+
+
+
